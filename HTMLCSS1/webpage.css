@@ -1,0 +1,150 @@
+*{
+	padding: 0;
+	margin:0;
+}
+body{
+	background-image: linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.6)),url(pamban_bridge.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+.container{
+	position: relative;
+	width:100vw;
+	height: 45px;
+	line-height: 45px;
+	font-family: sans-serif;
+
+}
+.container nav{
+	position: absolute;
+	width: 100%;
+	top:10px;
+	right: 50px;
+	align-items: center;
+	display: flex;
+    justify-content: space-between;
+}
+.container nav h1{
+	margin:0 100px;
+	color: #fff;
+	font-size: 45px;
+
+
+}
+.container nav h1 ul{
+	list-style: none;
+}
+ ul li{
+  display:inline-block;
+  margin: 0 10px;
+}
+ul li a{
+	display: block;
+	padding: 0 20px;
+	font-size: 25px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	position: relative;
+    transition: 0.5s ease all;
+
+}
+ul li a::after{
+	content: " ";
+	width: 0;
+	height: 2px;
+	background-color: #fff;
+	left: 0;
+	bottom:0px;
+	position: absolute;
+	transition: 0.3s ease all;
+
+
+}
+ul li a:hover::after{
+	width:100%;
+	transition: width 0.5s ease all;
+	
+
+}
+
+.content{
+	width:100%;
+	height: 300px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: grid;
+	align-items: center;
+	
+}
+.content h1{
+	color: #fff;
+	font-size: 65px;
+	font-family: arial;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 10px;
+}
+.content p{
+	color:#fff;
+	font-size: 25px;
+	font-family:arial;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 200px;
+}
+.buttons{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    font-family: fantasy;
+    position: absolute;
+    top:75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.buttons button{
+	cursor: pointer;
+	width:250px;
+	margin: 20px;
+	height: 35px;
+	line-height: 0px;
+	text-align: center;
+	font-size: 25px;
+	border: solid 1px #fff;
+	border-radius: 20px;
+	padding:25px 18px;
+	color: #fff;
+	font-weight: bold;
+	background:none;
+	position: relative;
+	transition: 0.3s ease all;
+}
+.buttons button:hover{
+	color:#000;
+	font-weight:bold;
+
+}
+button::after{
+	position: absolute;
+	content: " ";
+	height: 100%;
+	width:0%;
+	z-index: -1;
+	background-color: aqua;
+	left:0px;
+	top:0;
+	border-radius: 20px;
+	transition:0.5s ease all;
+
+	
+}
+button:hover::after{
+	background-color:aqua;
+	width: 100%;
+}
